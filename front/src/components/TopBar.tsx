@@ -11,7 +11,7 @@ export function TopBar({ avatar = true }: { avatar?: boolean }) {
         TurismES
       </Link>
       <div className="flex items-center gap-4">
-        <Icon
+        {/*<Icon
           name="notifications"
           className="text-on-surface-variant hover:opacity-80 cursor-pointer"
         />
@@ -26,7 +26,7 @@ export function TopBar({ avatar = true }: { avatar?: boolean }) {
               alt="Perfil"
             />
           </Link>
-        )}
+        )}*/}
       </div>
     </nav>
   );

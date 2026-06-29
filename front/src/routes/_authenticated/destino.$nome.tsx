@@ -141,10 +141,10 @@ function DestinoPage() {
 
         {/* CTA */}
         <section className="px-6 mb-8">
-          <button className="w-full bg-primary text-primary-foreground py-4 rounded-2xl font-bold text-lg shadow-lg active:scale-[0.98] transition-transform flex items-center justify-center gap-2">
+          {/*<button className="w-full bg-primary text-primary-foreground py-4 rounded-2xl font-bold text-lg shadow-lg active:scale-[0.98] transition-transform flex items-center justify-center gap-2">
             <Icon name="map" style={{ fontSize: 20 }} />
             Ver no Mapa
-          </button>
+          </button>*/}
         </section>
       </main>
       <BottomNav />

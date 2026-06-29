@@ -80,7 +80,7 @@ function FavoritosPage() {
               </button>
                 <div className="absolute bottom-4 left-4">
                   <span className={`bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full backdrop-blur-sm`}>
-                    {f.place.category}
+                    {f.place.region}
                   </span>
                 </div>
               </div>
@@ -90,9 +90,9 @@ function FavoritosPage() {
                   <Icon name="location_on" className="mr-1" style={{ fontSize: 16 }} />
                   {f.place.city}
                 </div>
-                <button className="mt-auto w-full py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold rounded-full active:scale-95 transition-all shadow-lg shadow-primary/20">
+                {/*<button className="mt-auto w-full py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold rounded-full active:scale-95 transition-all shadow-lg shadow-primary/20">
                   Planejar Visita
-                </button>
+                </button>*/}
               </div>
             </article>
           ))}

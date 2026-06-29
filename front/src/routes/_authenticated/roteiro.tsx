@@ -41,10 +41,10 @@ function RoteiroPage() {
                 Vitória &<br />Vila Velha
               </h2>
             </div>
-            <button className="bg-tertiary text-white px-6 py-3 rounded-full flex items-center gap-2 shadow-lg active:scale-95 transition-transform">
+            {/*<button className="bg-tertiary text-white px-6 py-3 rounded-full flex items-center gap-2 shadow-lg active:scale-95 transition-transform">
               <Icon name="map" style={{ fontSize: 16 }} />
               <span className="font-bold text-sm">Ver no Mapa</span>
-            </button>
+            </button>*/}
           </div>
 
         </section>

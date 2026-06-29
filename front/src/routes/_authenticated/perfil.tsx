@@ -78,7 +78,7 @@ function PerfilPage() {
             Sair
           </button>
           <p className="text-center text-[10px] text-on-surface-variant/50 uppercase tracking-widest mt-6">
-            Versão 2.4.0 • Feito com orgulho no ES
+            Versão 1.0.0 • Feito com orgulho no ES
           </p>
         </section>
       </main>
