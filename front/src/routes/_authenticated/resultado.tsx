@@ -23,15 +23,20 @@ export const Route = createFileRoute("/_authenticated/resultado")({
 
 function ResultPage() {
   
-  
-
   const {
     resultsQuiz
   } = useAuth();
+  
+  if (!resultsQuiz || resultsQuiz.length === 0) {
+      return (
+          <div className="pt-24 text-center">
+              Carregando resultado...
+          </div>
+      );
+  }
 
   const scores: Record<string, number> = {};
   
-  console.log("Resultado:", resultsQuiz);
   
   resultsQuiz.forEach((item) => {
     scores[item.categoria] = item.pontos;
@@ -51,13 +56,7 @@ function ResultPage() {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 4);
 
-  if (resultsQuiz.length === 0) {
-    return (
-        <div className="pt-24 text-center">
-            Resultado não encontrado.
-        </div>
-    );
-  }
+
   return (
     <div className="bg-surface text-on-surface min-h-screen pb-32">
       <TopBar />
